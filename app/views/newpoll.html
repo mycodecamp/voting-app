@@ -1,0 +1,39 @@
+	<div class="jumbotron">
+				<div class="container">
+					<div class="new-poll">
+						<div class="page-header">
+							<h2 class="header1">Create new poll</h2>
+						</div>
+				
+						<form action="/newpoll" method="post">
+							
+							<div class="form-group">
+								<label for="name">Question</label> 
+								<input type="text" class="form-control validate" id="question" name="question" placeholder="Question">
+							</div>
+						
+							<div id="options-fields"  class="form-group">
+								<div id="option1" class="form-group">
+									<label for="option1">Option: </label>
+									<input type="text" name="option1" required="" class="form-control validate"/>
+								
+								</div>
+								<div id="option2" class="form-group">
+										<label for="option2">Option: </label>
+									<input type="text" name="option2" required="" class=" form-control validate"/>
+								
+								</div>
+							</div>
+							
+							<div class="form-group">
+								 <button type="submit" class="btn btn-outline-primary btn-create">Create Poll</button>
+								 <button type="reset" class="btn  btn-outline-primary btn-delete">Reset</button>
+							</div>
+								
+						
+						
+						</form>
+						
+					</div>
+				</div>
+			</div>

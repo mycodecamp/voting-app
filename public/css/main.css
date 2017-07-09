@@ -34,171 +34,138 @@ p {
 	margin: 8px 0 0 0;
 }
 
-.container p {
-	text-align: center;
-	padding: 0;
+.login-btn{
+    text-align: center;
+   
 }
 
-/****** Header Styling ******/
-
-header p {
-	margin: 16px 0 5px 0;
+.header1{
+    color:rgba(0, 188, 212, 1)!important;
 }
 
-.menu {
-	text-decoration: none;
-	padding: 6px;
-	margin: 0;
-	color: #727272;
+#login-btn{
+    color: #ffffff;
+    background-color: gray;
+    border-color: #285e8e;
+    padding: 10px;
+    width:250px;
+    margin: auto;
+}
+#login-btn img{
+    margin-right: 4px;
+}
+.login-btn a{
+    text-decoration: none;
+}
+.login-btn a:hover #login-btn{
+     background-color: darkgray;
+}
+.login-btn h1{
+    
+}
+.new-poll{
+    width:50%;
+    margin: auto;
 }
 
-.menu:visited {
-	color: #727272;
+.radio-val{
+    font-weight: bold;
 }
 
-.menu:hover {
-	color: #FFA000;
+.btn-outline-primary{
+    color: #428bca;
+    background-color: transparent;
+    border: 1px solid #428bca;
+    transition: all .5s;
+    font-stretch: expanded;
+    font-size: 1em;
+    font-weight: 100;
+   
+
 }
 
-.menu:active {
-	color: #FF630D;
+.btn-outline-delete{
+    color: red;
+    background-color: transparent;
+    border: 1px solid red;
+    transition: all .5s;
+    font-stretch: expanded;
+    font-size: 1em;
+    font-weight: 100;
+
 }
 
-header a ~ p {
-	margin: 0;
-	padding: 0;
-	display: inline;
-	color: #ECEFF1;
+.jumbotron{
+    background-color: #fff;
+    
 }
 
-#display-name {
-	font-weight: 400;
+.btn-twitter {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #1c95d0;
 }
 
-/****** Login Styling ******/
-
-.login {
-	margin: 86px auto 0 auto;
-	text-align: center;
+.btn-twitter:hover,
+.btn-twitter:focus,
+.btn-twitter:active {
+  color: #ffffff;
+  background-color: #0271bf;
 }
 
-#login-btn {
-	width: 225px;
-	padding: 7px 5px;
+.navbar {min-height:100px !important;}
+.navbar-brand{
+    font-size: 1.3em;
+}
+.navbar-nav > li > a {
+    padding-top:30px !important; 
+    padding-bottom:30px !important;
+    font-size: 1.3em;
+    color: black!important;
+  
+}
+.navbar-nav > li > a:hover{
+    color:#fff!important;
 }
 
-.btn p {
-	margin: 8px 0 0 0;
-	padding: 0;
+.navbar-header{
+     min-height: 100px;
+       color: white;
+       border-right: rgba(51,124,225, 0.2) solid 1px ;
+       padding: 5px 10px;
+}
+.navbar-header a{
+    text-decoration: none;
+     color: white;
+}
+#my-header 
+{
+   min-height: 100px;
+    background-color: rgba(0, 188, 212, 1);
+}
+.poll-list div{
+     margin-bottom: 10px;
+     margin-top: 10px;
+     
+}
+.profile-tab{
+    width: 250px;
+}
+.profile-tab tr td:first-child 
+{
+  text-align: right;
+  font-weight: 500;
+ 
+}
+.profile-tab tr td:last-child 
+{
+      text-align: center;
+    font-weight: 500;
+    color: rgba(0, 188, 212, 1);
 }
 
-.btn > img {
-	float: left;
-	margin-left: 10px
-}
-
-/****** Logo Div Styling ******/
-
-img {
-	margin: 0 auto;
-	display: block;
-}
-
-.clementine-text { /* Styling for the Clementine.js text */
-	padding: 0;
-	margin: -25px 0 0 0;
-	font-weight: 500;
-	font-size: 60px;
-	color: #FFA000;
-}
-
-/****** Click Styling ******/
-
-.btn-container {	/* Styling for the div that contains the buttons */
-	margin: -10px auto 0 auto;
-	text-align: center;
-}
-
-.btn {	/* Styling for buttons */
-	margin: 0 8px;
-	color: white;
-	background-color: #00BCD4;
-	display: inline-block;
-	border: 0;
-	font-size: 14px;
-	border-radius: 3px;
-	padding: 10px 5px;
-	width: 100px;
-	font-weight: 500;
-}
-
-.btn:focus {	/* Remove outline when hovering over button */
-	outline: none;
-}
-
-.btn:active {	/* Scale the button down by 10% when clicking on button */
-	transform: scale(0.9, 0.9);
-	-webkit-transform: scale(0.9, 0.9);
-	-moz-transform: scale(0.9, 0.9);
-}
-
-.btn-delete {	/* Styling for delete button */
-	background-color: #ECEFF1;
-	color: #212121;
-}
-
-#click-nbr {
-	font-weight: 400;
-}
-
-/****** Profile Styling ******/
-
-.github-profile {
-	width: 350px;
-	height: 200px;
-	border-radius: 3px;
-	margin: 86px auto 0 auto;
-	background-color: #EEE;
-	text-align: center;
-	color: #000;
-}
-
-.github-profile p:first-child {
-	padding-top: 16px;
-}
-
-.github-profile p:nth-child(5) {
-	margin-bottom: 16px
-}
-
-.github-profile p {
-	margin: 0 0 0 16px;
-	text-align: left;
-}
-
-.profile-value {
-	font-weight: 400;
-}
-
-span {
-	font-weight: 500;
-}
-
-.github-profile > img {
-	padding-top: 16px;
-	margin-bottom: 16px;
-}
-
-.github-profile .menu:hover {
-	color: #FFA000;
-}
-
-.github-profile .menu:active {
-	color: #FF630D;
-}
-
-#menu-divide {
-	color: #FFFFFF;
-	display: inline;
-	margin: 0;
-}
+.ques-class{
+    text-decoration: none;
+    font-weight: 500;
+    
+} 

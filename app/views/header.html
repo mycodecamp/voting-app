@@ -1,0 +1,19 @@
+	<nav class="navbar navbar-default">
+		<div class="container-fluid" id="my-header">
+			<div class="navbar-header">
+				<h1><a href="/">Voting App</a></h1>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li></li>
+					{{#if isLoggedIn}}
+						<li><a href="/newpoll">New Poll</a></li>
+						<li><a href="/profile">Profile</a></li>
+						<li><a href="/logout">Logout</a></li>
+					{{else}}
+						<li><a href="/login">Login</a></li>
+					{{/if}}
+				</ul>
+			</div>
+		</div>
+     </nav>
