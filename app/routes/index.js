@@ -15,7 +15,9 @@ module.exports = function (app, passport) {
 	}
 
 	var clickHandler = new ClickHandler();
+	
 	var voteHandler = new VoteHandler();
+	
 	
 	app.route('/').get(voteHandler.getPolls);
 
@@ -44,26 +46,33 @@ module.exports = function (app, passport) {
     	
     app.route('/vote/:id')
     	.post(voteHandler.vote);
+    	
 
 	app.route('/profile')
 		.get(isLoggedIn, voteHandler.profile);
+		
 
 	app.route('/api/:id')
 		.get(isLoggedIn, function (req, res) {
 			res.json(req.user.github);
 		});
+		
 
 	app.route('/auth/github')
 		.get(passport.authenticate('github'));
+		
 
 	app.route('/auth/github/callback')
 		.get(passport.authenticate('github', {
 			successRedirect: '/',
 			failureRedirect: '/login'
 		}));
+		
 
 	app.route('/api/:id/clicks')
 		.get(isLoggedIn, clickHandler.getClicks)
 		.post(isLoggedIn, clickHandler.addClick)
 		.delete(isLoggedIn, clickHandler.resetClicks);
+		
+		
 };
